@@ -17,11 +17,11 @@ public class Issue {
     private String status; // PENDING, IN_PROGRESS, RESOLVED
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "reported_by_id")
     private User reportedBy;
 
     @ManyToOne
-    @JoinColumn(name = "employee_id")
+    @JoinColumn(name = "assigned_to_id")
     private User assignedTo;
 
     private LocalDateTime createdAt;

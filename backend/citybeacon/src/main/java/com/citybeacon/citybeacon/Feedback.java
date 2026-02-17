@@ -18,7 +18,7 @@ public class Feedback {
     private Issue issue;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "given_by_id")
     private User givenBy;
 
     private LocalDateTime createdAt;
